@@ -27,9 +27,9 @@ Next, install the application dependencies.
 	cd clickyGame
 	
   
-  * 
-  * 
-  * 
+  * yarn install axios
+  * yarn install
+  * yarn start
   * 
 	
 Finally, run the node server locally.
