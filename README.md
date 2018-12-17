@@ -36,7 +36,7 @@ Finally, run the node server locally.
 
 	node 
 	
-Now, open the local application on port 8080 at the URL: `/`.
+Now, open the local application on port 8080 at the URL: `https://github.com/chehlsee/clickyGame.git/`.
 
 # Copyright
  (C) Chehlsee 2018. All Rights Reserved.
