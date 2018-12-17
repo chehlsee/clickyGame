@@ -27,7 +27,7 @@ Next, install the application dependencies.
 	cd clickyGame
 	
   
-  * yarn install axios
+  * 
   * yarn install
   * yarn start
   * 
