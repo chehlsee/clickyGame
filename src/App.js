@@ -1,17 +1,17 @@
 import React, {
   Compontent
-} from "react";
-import FriendCard from "./components/FriendCard";
-import Wrapper from "./compontents/Wrapper";
-import Title from "./components/Title";
+} from "React";
+import FriendCard from "../src/compontents/FriendCard";
+import Wrapper from "../src/compontents/Wrapper";
+import Title from "../src/components/Title";
 import friends from "./friends.json";
-import Navbar from "./compontents/Jumbotron";
+import Navbar from "../src/compontents/Jumbotron";
 import Footer from 
-"./compontents/Footer";
+"../src/compontents/Footer";
 // this is not connected
 import "./App.css";
 
-class App extends Compnent {
+class App extends Component {
   // setting this.state.friends to the friends json array this is similar to the inclass assignment
   state ={
     friends,
@@ -109,7 +109,22 @@ class App extends Compnent {
 
 
   // same as inclass assignment 16 stu
-  render() 
+  render() {
+    return (
+      <Wrapper>
+        <Title>Only Click the Image Once to Win!</Title>
+        {this.state.friends.map (friend => (
+          <FriendCard removeFriend={this.removeFriend}
+          id={friend.id}
+          key={friend.id}
+          name={friend.name}
+          image={friend.image}
+          userClick = {this.userClick}
+          />
+        ))}
+      </Wrapper>
+    )
+  }
   // on nav bar need to render the score
 
   // on nav bar need to render the high score
@@ -126,7 +141,7 @@ class App extends Compnent {
     // all react needs to have key
     // key = {friend.id}
     // name = {friend.name}
-    // image = {friend.image
+    // image = {friend.image}
   
 
     // close container
